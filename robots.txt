@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pnwengineer.com/sitemap.xml
