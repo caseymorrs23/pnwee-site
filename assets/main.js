@@ -1,4 +1,3 @@
-
 // PNW Electrical Engineering - main interactions
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
@@ -18,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Simple form validation
+  // Quote form (validation + GA4 event)
   const form = document.querySelector('#quote-form');
   if (form) {
     form.addEventListener('submit', (e) => {
+      // Simple validation
       const required = form.querySelectorAll('[required]');
       let ok = true;
       required.forEach(el => {
@@ -30,7 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!ok) {
         e.preventDefault();
         alert('Please complete all required fields.');
+        return; // stop if invalid
       }
-    })
+
+      // GA4 lead event
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'Form',
+          event_label: 'Quote Form'
+        });
+      }
+    });
   }
 });
