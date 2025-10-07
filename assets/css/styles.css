@@ -212,3 +212,8 @@ main img{max-width:100%;height:auto}
 /* FAQ Q&A cards */
 .faq .qa{border:1px solid rgba(0,0,0,.08);border-radius:12px;background:#fff;padding:.9rem;margin:.6rem 0}
 .faq h1, .faq h2{margin:.2rem 0 .6rem}
+
+/* Outline brand buttons */
+.btn-outline-brand{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
+.btn-outline-brand:hover{background:var(--accent);color:#fff;text-decoration:none}
+.btn-outline-brand:focus-visible{outline:3px solid rgba(18,94,166,.22);outline-offset:2px}
