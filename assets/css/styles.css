@@ -217,3 +217,15 @@ main img{max-width:100%;height:auto}
 .btn-outline-brand{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
 .btn-outline-brand:hover{background:var(--accent);color:#fff;text-decoration:none}
 .btn-outline-brand:focus-visible{outline:3px solid rgba(18,94,166,.22);outline-offset:2px}
+
+/* v19.22: autofill cleanup, blog thumb consistency */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-text-fill-color: var(--text);
+  transition: background-color 5000s ease-in-out 0s;
+}
+.blog-grid .thumb::before{padding-top:56%}
+.blog-grid .thumb img{object-fit:cover}
