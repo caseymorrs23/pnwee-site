@@ -134,3 +134,6 @@ button.btn[disabled]{opacity:.7;cursor:not-allowed}
   .header .nav a{padding:.55rem .65rem}
   .header .nav .cta-quote{margin-top:.3rem;align-self:flex-start}
 }
+
+.btn-outline-dark{background:transparent;border:1px solid #0b1220;color:#0b1220}
+.btn-outline-dark:hover{background:#0b1220;color:#fff;text-decoration:none}
