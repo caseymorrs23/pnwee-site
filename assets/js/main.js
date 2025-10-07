@@ -36,3 +36,16 @@
   }
   document.querySelectorAll('form').forEach(enhance);
 })();
+
+/* HAMBURGER */
+(function(){
+  try{
+    var header = document.querySelector('.header');
+    var hamb = document.querySelector('.hamb');
+    if(hamb){
+      hamb.addEventListener('click', function(){
+        header.classList.toggle('open');
+      });
+    }
+  }catch(e){}
+})();
