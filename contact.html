@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact a Washington Electrical Engineer | PNW Electrical Engineering, PLLC</title>
-  <meta name="description" content="Request a proposal or contact PNW Electrical Engineering for Washington electrical engineering services." />
-  <meta name="robots" content="index,follow" />
-  <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_TOKEN" />
-  <meta name="msvalidate.01" content="REPLACE_WITH_BING_TOKEN" />
-  <meta name="apple-site-verification" content="REPLACE_WITH_APPLE_TOKEN" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="preload" href="assets/css/styles.css" as="style" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="canonical" href="https://www.pnwengineer.com/contact.html"/>
-  <meta property="og:site_name" content="PNW Electrical Engineering, PLLC" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact a Washington Electrical Engineer | PNW Electrical Engineering, PLLC" />
-  <meta property="og:description" content="Request a proposal or contact PNW Electrical Engineering for Washington electrical engineering services." />
-  <meta property="og:url" content="https://www.pnwengineer.com/contact.html" />
-  <meta property="og:image" content="https://www.pnwengineer.com/images/hero-placeholder.webp" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact a Washington Electrical Engineer | PNW Electrical Engineering, PLLC" />
-  <meta name="twitter:description" content="Request a proposal or contact PNW Electrical Engineering for Washington electrical engineering services." />
-  <meta name="twitter:image" content="https://www.pnwengineer.com/images/hero-placeholder.webp" />
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><link rel='stylesheet' href='assets/css/styles.css'/><script defer src='assets/js/main.js'></script><link rel='icon' href='favicon.ico'/><title>PNW Electrical Engineering, PLLC</title></head><body>
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5DQRPTPG');</script>
-<!-- End Google Tag Manager -->
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQRPTPG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <header class="header">
   <div class="header-inner container">
     <div class="brand"><img class="brand-logo" src="images/logo-stamp.png" alt="PNW Electrical Engineering PLLC logo"/> <span>PNW Electrical Engineering, PLLC</span><span class="badge">PE #55998</span></div>
@@ -43,44 +11,31 @@
       <a href="service-areas.html">Service Areas</a>
       <a href="blog/index.html">Blog</a>
       <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="about-contact.html">About & Contact</a>
       <a class="btn btn-accent circle cta-quote" href="contact.html#quote">Get a Free Quote</a>
-
     </nav>
     <button id="hamb" class="hamb">☰</button>
   </div>
 </header>
+
 <main class="container">
-
-  <h1>Contact</h1>
-  <p class="small">This form sends directly to casey-morris@live.com. Phone: 443-742-7054.</p>
-  <form id="quote" class="card" method="POST" action="https://formsubmit.co/casey-morris@live.com">
-    <!-- Formsubmit config -->
-    <input type="hidden" name="_subject" value="New lead via pnwengineer.com" />
-    <input type="hidden" name="_captcha" value="false" />
-    <input type="hidden" name="_template" value="box" />
-    <input type="hidden" name="_redirect" value="https://www.pnwengineer.com/thank-you.html" />
-    <div class="row">
-      <div><label for="name">Name</label><input id="name" name="name" required /></div>
-      <div><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
-    </div>
-    <div class="row">
-      <div><label for="phone">Phone</label><input id="phone" name="phone" placeholder="443-742-7054" /></div>
-      <div><label for="service">Service</label><input id="service" name="service" placeholder="EV charging, transformer, load calc..." /></div>
-    </div>
-    <label for="message">Project Details</label>
-    <textarea id="message" name="message" rows="6" placeholder="Brief scope, timeline, and deliverables."></textarea>
-    <div style="display:flex; gap:.6rem; margin-top:.8rem;">
-      <button class="btn btn-accent circle" type="submit">Send</button>
-      <a class="btn" href="tel:4437427054">Call 443-742-7054</a>
-    </div>
-  </form>
-
+  <section class="card">
+    <h1>Get a Free Quote</h1>
+    <p class="small">Tell us about your project.</p>
+    <form id="quote" method="POST" action="https://formsubmit.co/casey-morris@live.com">
+      <input type="hidden" name="_subject" value="Quote Request — PNW Engineer"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <div style="display:grid;gap:.6rem;grid-template-columns:1fr 1fr;">
+        <div><label for="qname">Name</label><input id="qname" name="name" required/></div>
+        <div><label for="qemail">Email</label><input id="qemail" type="email" name="email" required/></div>
+        <div><label for="qphone">Phone</label><input id="qphone" name="phone" value="4437427054"/></div>
+        <div><label for="qlocation">City</label><input id="qlocation" name="city" placeholder="e.g., Spokane"/></div>
+      </div>
+      <div style="margin-top:.5rem;"><label for="qmsg">Project</label><textarea id="qmsg" name="message" rows="5" placeholder="EV chargers, solar, transformer review, etc."></textarea></div>
+      <div style="display:none;"><input type="text" name="_honey"></div>
+      <div style="margin-top:.6rem;"><button class="btn btn-accent">Request Quote</button></div>
+    </form>
+  </section>
 </main>
-<footer class="footer"><div class="container small"><div class="footer-brand"><img src="images/logo-stamp.png" alt="PNW EE logo"/><span>PNW Electrical Engineering, PLLC — WA PE 55998</span></div><div><a href="tel:4437427054">443-742-7054</a> • <a href="mailto:casey-morris@live.com">casey-morris@live.com</a> • <a href="index.html">Home</a> • <a href="services.html">Services</a> • <a href="contact.html">Contact</a></div></div></footer>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/analytics.js"></script>
-</body>
-</html>
+<footer class="footer"><div class="container small"><div class="footer-brand"><img src="images/logo-stamp.png" alt="PNW EE logo" style="height:28px;border-radius:4px;"/> <span>PNW Electrical Engineering, PLLC — WA PE 55998</span></div><div><a href="tel:4437427054">443-742-7054</a> • <a href="mailto:casey-morris@live.com">casey-morris@live.com</a> • <a href="index.html">Home</a> • <a href="services.html">Services</a> • <a href="about-contact.html">About & Contact</a></div></div></footer>
+</body></html>
