@@ -149,3 +149,42 @@ button.btn[disabled]{opacity:.7;cursor:not-allowed}
 /* Constrain oversized logo images in content (blog/faq) */
 main img[src*="logo-stamp"]{max-width:260px;height:auto;display:block;margin:.5rem auto;border-radius:8px}
 .faq img, .blog-grid img{max-width:100%;height:auto}
+
+/* --- v19.15 Design polish --- */
+:root{
+  --bg:#f6f8fb; --card:#ffffff; --text:#0b1220; --muted:#55657e;
+  --brand:#0a3a69; --accent:#125ea6; --ring:rgba(18,94,166,.18);
+  --radius:14px; --shadow:0 8px 20px rgba(10,58,105,.06);
+}
+body{letter-spacing:.01em}
+.container{max-width:1200px}
+.header .header-inner{height:60px}
+h1{font-size:clamp(1.6rem,2.8vw,2.4rem)}
+h2{font-size:clamp(1.25rem,2.2vw,1.6rem)}
+h3{font-size:clamp(1.05rem,1.8vw,1.25rem)}
+.small{color:var(--muted)}
+.card{border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid rgba(0,0,0,.05)}
+.img-card{border-radius:12px}
+.ratio>img{border-radius:12px}
+.btn{border-radius:12px; padding:.6rem .9rem; box-shadow:0 2px 4px rgba(0,0,0,.04)}
+.btn:focus-visible{outline:3px solid var(--ring); outline-offset:2px}
+.btn-outline{border-color:#dde5f0}
+.btn-outline-dark{border-color:#233047}
+.nav a{border-radius:10px}
+.footer .container{padding:1rem 16px}
+/* equal-height price cards */
+.pricing .price-card{display:flex;flex-direction:column;min-height:260px}
+.pricing .price-card .btn{margin-top:auto}
+/* tidy blog cards further */
+.blog-grid{gap:.9rem}
+.blog-grid .card.with-img{padding:1rem}
+.blog-grid .ratio.thumb-sm::before{padding-top:45%}
+/* constrain logo anywhere as content image */
+main img[src*="logo"]{max-width:240px;height:auto;border-radius:8px}
+/* better map iframe rounding */
+iframe{border-radius:12px}
+/* balanced gaps between blocks */
+main .card + .card{margin-top:1rem}
+/* tighter nav gaps on large, room on mobile */
+.header .nav{gap:0.85rem}
+@media(max-width:980px){.header .nav a{padding:.5rem .7rem}}
