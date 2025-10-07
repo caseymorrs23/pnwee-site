@@ -88,7 +88,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQRPTPG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
   <div class="header-inner container">
-    <div class="brand"><span>PNW Electrical Engineering, PLLC</span><span class="badge">PE #55998</span></div>
+    <div class="brand"><img class="brand-logo" src="images/logo-stamp.png" alt="PNW Electrical Engineering PLLC logo"/> <span>PNW Electrical Engineering, PLLC</span><span class="badge">PE #55998</span></div>
     <nav id="nav" class="nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -133,7 +133,28 @@
     <h3>Leave a Review</h3>
     <p class="small">We appreciate your feedback. You can email us at <a href="mailto:casey-morris@live.com">casey-morris@live.com</a> and we’ll publish your testimonial.</p>
   </section>
+
+  <section class="card" style="margin-top:1rem;">
+    <h3>Submit a Review</h3>
+    <p class="small">We appreciate your feedback. Your note will be sent directly to our inbox.</p>
+    <form method="POST" action="https://formsubmit.co/casey-morris@live.com">
+      <input type="hidden" name="_subject" value="New client review from pnwengineer.com" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+      <div class="row">
+        <div><label for="rname">Your Name/Role</label><input id="rname" name="name" required /></div>
+        <div><label for="rloc">Location</label><input id="rloc" name="location" placeholder="City, WA" /></div>
+      </div>
+      <label for="rbody">Review</label>
+      <textarea id="rbody" name="message" rows="5" placeholder="What went well? What we delivered?"></textarea>
+      <div style="margin-top:.6rem;display:flex;gap:.6rem;">
+        <button class="btn btn-accent circle" type="submit">Send Review</button>
+        <a class="btn" href="contact.html#quote">Request a Proposal</a>
+      </div>
+    </form>
+  </section>
 </main>
+
 <footer class="footer"><div class="container small">PNW Electrical Engineering, PLLC • WA PE 55998 • <a href="tel:4437427054" style="color:inherit;">443-742-7054</a> • <a href="mailto:casey-morris@live.com" style="color:inherit;">casey-morris@live.com</a></div></footer>
 <script src="assets/js/main.js"></script>
 </body>
