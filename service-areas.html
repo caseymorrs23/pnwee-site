@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Areas Map | PNW Electrical Engineering, PLLC</title>
+  <meta name="description" content="Interactive map showing service coverage across Washington State." />
+  <link rel="canonical" href="https://www.pnwengineer.com/service-areas.html"/>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5DQRPTPG');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    #wa-map { height: 520px; border-radius: 16px; border:1px solid rgba(255,255,255,.12); }
+    .map-legend { font-size:.85rem; color:#9fb2c8; margin-top:.5rem; }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQRPTPG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<header class="header">
+  <div class="header-inner container">
+    <div class="brand"><span>PNW Electrical Engineering, PLLC</span><span class="badge">PE #55998</span></div>
+    <nav id="nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="service-areas.html" aria-current="page">Service Areas</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-accent circle cta-quote" href="contact.html#quote">Get a Free Quote</a>
+          <a href="faq.html">FAQ</a>
+    </nav>
+    <button id="hamb" class="hamb">☰</button>
+  </div>
+</header>
+<main class="container">
+  <h1>Service Areas — Washington</h1>
+  <p class="small">We serve all of Washington State. The shaded region below indicates our coverage footprint.</p>
+  <div id="wa-map"></div>
+  <div class="map-legend">Coverage shown is approximate and intended for general reference. Contact us for specific project locations.</div>
+
+  <div class="card" style="margin-top:1rem;">
+    <h3>Also see on Google Maps</h3>
+    <p class="small">Quick view centered on Washington State.</p>
+    <iframe
+      title="Washington State on Google Maps"
+      width="100%"
+      height="340"
+      style="border:0; border-radius:12px;"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Washington%20State&output=embed&z=6">
+    </iframe>
+  </div>
+</main>
+<footer class="footer"><div class="container small">PNW Electrical Engineering, PLLC • WA PE 55998</div></footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // Initialize Leaflet map centered over Washington
+  const map = L.map('wa-map', { scrollWheelZoom: false }).setView([47.5, -120.5], 6);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Approximate bounding polygon covering Washington (lat/lng box)
+  const waBounds = [
+    [49.05, -125.0], // NW
+    [49.05, -116.9], // NE
+    [45.5, -116.9],  // SE
+    [45.5, -125.0]   // SW
+  ];
+  L.polygon(waBounds, {
+    color: '#58b4ff',
+    weight: 1.5,
+    fillColor: '#58b4ff',
+    fillOpacity: 0.12
+  }).addTo(map);
+
+  // Key cities markers (optional visual anchors)
+  const cities = [
+    ['Seattle', 47.6062, -122.3321],
+    ['Tacoma', 47.2529, -122.4443],
+    ['Olympia', 47.0379, -122.9007],
+    ['Bellevue', 47.6101, -122.2015],
+    ['Spokane', 47.6588, -117.4260],
+    ['Yakima', 46.6021, -120.5059],
+    ['Vancouver', 45.6387, -122.6615],
+    ['Bellingham', 48.7491, -122.4787]
+  ];
+  cities.forEach(([name, lat, lng]) => L.circleMarker([lat,lng], {radius:4}).addTo(map).bindTooltip(name));
+</script>
+</body>
+</html>

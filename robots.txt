@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://pnwengineer.com/sitemap.xml
+Sitemap: https://www.pnwengineer.com/sitemap.xml

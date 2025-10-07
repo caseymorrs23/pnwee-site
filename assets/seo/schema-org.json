@@ -1,0 +1,57 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": [
+      "ProfessionalService",
+      "LocalBusiness"
+    ],
+    "@id": "https://www.pnwengineer.com#org",
+    "name": "PNW Electrical Engineering, PLLC",
+    "url": "https://www.pnwengineer.com",
+    "email": "casey-morris@live.com",
+    "telephone": "443-742-7054",
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Washington"
+      }
+    ],
+    "serviceType": [
+      "Electrical engineering services",
+      "EV charging station design",
+      "Transformer adequacy studies",
+      "Electrical load calculations",
+      "Professional Engineer (PE) plan review"
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional License",
+      "name": "Professional Engineer (PE)",
+      "identifier": "WA PE 55998"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "casey-morris@live.com",
+      "telephone": "443-742-7054",
+      "areaServed": "US-WA"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://www.pnwengineer.com#person",
+    "name": "Casey Morris, P.E.",
+    "email": "casey-morris@live.com",
+    "telephone": "443-742-7054",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Professional License",
+      "name": "Professional Engineer (PE)",
+      "identifier": "WA PE 55998"
+    },
+    "affiliation": {
+      "@id": "https://www.pnwengineer.com#org"
+    }
+  }
+]

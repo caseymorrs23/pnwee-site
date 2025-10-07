@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>PNW Electrical Engineering, PLLC Blog</title>
+  <link>https://www.pnwengineer.com/blog/index.html</link>
+  <description>EV charging, transformer studies, and electrical engineering in Washington.</description>
+  <lastBuildDate>2025-10-07</lastBuildDate>
+  
+  <item>
+    <title>EV Charging Load Calculations in Washington: A Practical Guide</title>
+    <link>https://www.pnwengineer.com/blog/ev-charging-load-calculation-guide.html</link>
+    <description>How we calculate diversified EV charging loads and check transformer/panel capacity for WA projects.</description>
+    <pubDate>2025-10-07</pubDate>
+    <guid>https://www.pnwengineer.com/blog/ev-charging-load-calculation-guide.html</guid>
+  </item>
+  <item>
+    <title>Transformer Adequacy with Washington Utilities: What to Prepare</title>
+    <link>https://www.pnwengineer.com/blog/transformer-adequacy-with-washington-utilities.html</link>
+    <description>What utilities want to see in transformer adequacy studies (Tri-Cities, Spokane, Puget area).</description>
+    <pubDate>2025-10-07</pubDate>
+    <guid>https://www.pnwengineer.com/blog/transformer-adequacy-with-washington-utilities.html</guid>
+  </item>
+  <item>
+    <title>When You Need a PE Stamp for Electrical Permits in Washington</title>
+    <link>https://www.pnwengineer.com/blog/pe-stamp-electrical-permits-washington.html</link>
+    <description>A straightforward overview of when PE review/stamping is typically required and how we help.</description>
+    <pubDate>2025-10-07</pubDate>
+    <guid>https://www.pnwengineer.com/blog/pe-stamp-electrical-permits-washington.html</guid>
+  </item>
+</channel>
+</rss>
