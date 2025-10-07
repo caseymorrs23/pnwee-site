@@ -47,3 +47,20 @@ h1,h2,h3{margin:.2rem 0 .6rem}
 .price-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:1rem}
 .price{font-weight:800}
 .price small{color:#51617a;font-weight:600}
+
+/* Blog thumbnails smaller */
+.thumb-sm.ratio.ratio-16x9::before{padding-top:40%} /* shorter than 16:9 for thumbnails */
+.blog-grid .card.with-img h3{margin:.5rem 0 .25rem}
+
+/* FAQ page tidy */
+.faq .qa{border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:.8rem;background:#fff}
+.faq .qa + .qa{margin-top:.6rem}
+.faq h2{margin-top:.4rem}
+
+/* General content spacing */
+main .card p + ul{margin-top:.25rem}
+.card ul{padding-left:1.1rem}
+.card li{margin:.15rem 0}
+
+/* Keep grid cards visually even */
+.card .ratio{border-radius:12px}
