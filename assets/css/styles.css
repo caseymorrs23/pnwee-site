@@ -39,3 +39,11 @@ a{color:var(--accent)}
 .img-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;overflow:hidden}
 .small{color:var(--muted);font-size:.95rem}
 h1,h2,h3{margin:.2rem 0 .6rem}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:.5rem}
+.step{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:.9rem}
+.step .num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:#125ea6;color:#fff;font-weight:700;margin-right:.5rem}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:.5rem}
+.price-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:1rem}
+.price{font-weight:800}
+.price small{color:#51617a;font-weight:600}
