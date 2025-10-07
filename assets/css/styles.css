@@ -112,7 +112,7 @@ input:focus, textarea:focus{outline:2px solid #94c0ff; outline-offset:1px}
 }
 /* CTA button sizing */
 .header .nav .cta-quote{margin-left:.25rem;padding:.45rem .7rem;border:1px solid rgba(255,255,255,.35);border-radius:999px}
-.header .brand .brand-logo{height:28px;width:auto;border-radius:4px}
+.header .brand .brand-logo{height:36px;width:auto;border-radius:4px}
 .header .brand span{font-size:.95rem}
 
 /* Unified 16:9 media sizing */
@@ -124,3 +124,9 @@ input:focus, textarea:focus{outline:2px solid #94c0ff; outline-offset:1px}
 .img-card .ratio{border-radius:12px;border:0}
 /* Blog/Project/Review headers unify */
 .header-media .ratio{margin-bottom:1rem}
+
+.hero-overlay .cta .btn,
+.hero-overlay .btn{background:#ffffff;color:#0b1220;border:1px solid rgba(0,0,0,.1)}
+.hero-overlay .btn:hover{filter:brightness(.97)}
+.hero-overlay .btn.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.hero-overlay .btn.btn-accent{background:#ffffff;color:#0b1220;border-color:#ffffff}
