@@ -64,3 +64,13 @@ main .card p + ul{margin-top:.25rem}
 
 /* Keep grid cards visually even */
 .card .ratio{border-radius:12px}
+
+/* Form polish */
+form .form-grid{display:grid;gap:.8rem;grid-template-columns:1fr 1fr}
+@media(max-width: 800px){ form .form-grid{grid-template-columns:1fr} }
+form .field{display:flex;flex-direction:column;gap:6px}
+label{font-weight:600;color:#0b1220}
+input,textarea,select{width:100%;padding:.7rem .85rem;border-radius:12px;border:1px solid #cbd5e1;background:#fff;color:#0b1220}
+input::placeholder,textarea::placeholder{color:#7a8798}
+input:focus,textarea:focus,select:focus{outline:none;border-color:#125ea6;box-shadow:0 0 0 3px rgba(18,94,166,.15)}
+button.btn, .btn{cursor:pointer}

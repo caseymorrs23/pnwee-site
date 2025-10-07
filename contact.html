@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><link rel='stylesheet' href='assets/css/styles.css'/><script defer src='assets/js/main.js'></script><link rel='icon' href='favicon.ico'/><title>PNW Electrical Engineering, PLLC</title></head><body>
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><link rel='stylesheet' href='assets/css/styles.css'/><script defer src='assets/js/main.js'></script><link rel='icon' href='favicon.ico'/><title>PNW Electrical Engineering, PLLC</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+</head><body>
 
 <header class="header">
   <div class="header-inner container">
@@ -25,13 +28,18 @@
     <form id="quote" method="POST" action="https://formsubmit.co/casey-morris@live.com">
       <input type="hidden" name="_subject" value="Quote Request — PNW Engineer"/>
       <input type="hidden" name="_captcha" value="false"/>
-      <div style="display:grid;gap:.6rem;grid-template-columns:1fr 1fr;">
-        <div><label for="qname">Name</label><input id="qname" name="name" required/></div>
-        <div><label for="qemail">Email</label><input id="qemail" type="email" name="email" required/></div>
-        <div><label for="qphone">Phone</label><input id="qphone" name="phone" value="4437427054"/></div>
-        <div><label for="qlocation">City</label><input id="qlocation" name="city" placeholder="e.g., Spokane"/></div>
+      <div class="form-grid">
+        <div class="field"><label for="qname">Name</label>
+        <input id="qname" name="name" required/></div>
+        <div class="field"><label for="qemail">Email</label>
+        <input id="qemail" type="email" name="email" required/></div>
+        <div class="field"><label for="qphone">Phone</label>
+        <input id="qphone" name="phone" value="4437427054"/></div>
+        <div class="field"><label for="qlocation">City</label>
+        <input id="qlocation" name="city" placeholder="e.g., Spokane"/></div>
       </div>
-      <div style="margin-top:.5rem;"><label for="qmsg">Project</label><textarea id="qmsg" name="message" rows="5" placeholder="EV chargers, solar, transformer review, etc."></textarea></div>
+      <div style="margin-top:.5rem;"><label for="qmsg">Project</label>
+        <textarea id="qmsg" name="message" rows="5" placeholder="EV chargers, solar, transformer review, etc."></textarea></div>
       <div style="display:none;"><input type="text" name="_honey"></div>
       <div style="margin-top:.6rem;"><button class="btn btn-accent">Request Quote</button></div>
     </form>
