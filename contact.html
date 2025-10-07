@@ -28,18 +28,23 @@
     <form id="quote" method="POST" action="https://formsubmit.co/casey-morris@live.com">
       <input type="hidden" name="_subject" value="Quote Request — PNW Engineer"/>
       <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="thanks.html"/>
       <div class="form-grid">
         <div class="field"><label for="qname">Name</label>
-        <input id="qname" name="name" required/></div>
+        \1
+        <div class="hint">So we know who to contact.</div></div>
         <div class="field"><label for="qemail">Email</label>
-        <input id="qemail" type="email" name="email" required/></div>
+        \1
+        <div class="hint">We’ll send confirmation here.</div></div>
         <div class="field"><label for="qphone">Phone</label>
-        <input id="qphone" name="phone" value="4437427054"/></div>
+        \1
+        <div class="hint">Optional, but helpful if we need quick details.</div></div>
         <div class="field"><label for="qlocation">City</label>
         <input id="qlocation" name="city" placeholder="e.g., Spokane"/></div>
       </div>
       <div style="margin-top:.5rem;"><label for="qmsg">Project</label>
-        <textarea id="qmsg" name="message" rows="5" placeholder="EV chargers, solar, transformer review, etc."></textarea></div>
+        \1
+        <div class="hint">Include site address/utility if known.</div></div>
       <div style="display:none;"><input type="text" name="_honey"></div>
       <div style="margin-top:.6rem;"><button class="btn btn-accent">Request Quote</button></div>
     </form>

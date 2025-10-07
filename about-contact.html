@@ -33,14 +33,18 @@
     <form method="POST" action="https://formsubmit.co/casey-morris@live.com">
       <input type="hidden" name="_subject" value="Website Contact Form" />
       <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="thanks.html"/>
       <div class="form-grid">
         <div class="field"><label for="name">Name</label>
-        <input id="name" name="name" required /></div>
+        \1
+        <div class="hint">So we know who to contact.</div></div>
         <div class="field"><label for="email">Email</label>
-        <input id="email" type="email" name="email" required /></div>
+        \1
+        <div class="hint">We’ll send confirmation here.</div></div>
       </div>
       <div style="margin-top:.5rem;"><label for="msg">Message</label>
-        <textarea id="msg" name="message" rows="5" placeholder="How can we help?"></textarea></div>
+        \1
+        <div class="hint">Include site address/utility if known.</div></div>
       <div style="display:none;"><input type="text" name="_honey"></div>
       <div style="margin-top:.6rem;"><button class="btn btn-accent">Send Message</button></div>
     </form>
