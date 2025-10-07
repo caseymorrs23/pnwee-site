@@ -1,185 +1,119 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PNW Electrical Engineering, PLLC</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5DQRPTPG');</script>
-  <!-- End GTM -->
-  <style>
-    /* Home page hardens (safe to keep even if already in styles.css) */
-    .hero{position:relative;border-radius:16px;overflow:hidden;margin:18px auto}
-    .hero-media img{width:100%;height:420px;object-fit:cover;display:block}
-    @media(max-width:900px){.hero-media img{height:320px}}
-    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.36),rgba(0,0,0,.15))}
-    .hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:#fff;padding:0 16px}
-    .hero h1{font-weight:800;line-height:1.1;text-shadow:0 1px 2px rgba(0,0,0,.25)}
-    .hero .lead{max-width:980px;margin:.5rem auto 1rem;text-shadow:0 1px 2px rgba(0,0,0,.2)}
-    .cta-group{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
-    .btn{display:inline-block;padding:.5rem .9rem;border-radius:10px;border:1px solid transparent}
-    .btn-accent{background:#2f4f9f;border-color:#2f4f9f;color:#fff}
-    .btn-outline-brand{background:transparent;border:1.5px solid #2f4f9f;color:#2f4f9f}
-    .btn-outline-brand:hover{background:#2f4f9f;color:#fff}
-    .circle{border-radius:999px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    @media(max-width:1000px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.grid-3,.grid-4{grid-template-columns:1fr}}
-    .card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;overflow:hidden}
-    .thumb{position:relative;width:100%}
-    .thumb::before{content:"";display:block;padding-top:56%}
-    .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .section{margin:18px 0}
-    .small{color:#6b7380}
-  </style>
-</head>
-<body>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PNW Electrical Engineering, PLLC</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head><body>
 
-  <!-- Header (keep this exactly the same on every page) -->
-  <header class="header" style="background:#394066;color:#fff">
-    <div class="header-inner container" style="display:flex;align-items:center;justify-content:space-between;height:56px">
-      <div class="brand" style="display:flex;gap:10px;align-items:center">
-        <img class="brand-logo" src="images/logo-stamp.png" alt="PNW Electrical Engineering PLLC logo" style="height:28px;border-radius:6px" />
-        <strong>PNW Electrical Engineering, PLLC</strong>
-        <span>PE #55998</span>
-      </div>
-      <nav class="nav" style="display:flex;gap:12px;align-items:center">
-        <a href="index.html" style="color:#fff">Home</a>
-        <a href="services.html" style="color:#fff">Services</a>
-        <a href="projects.html" style="color:#fff">Projects</a>
-        <a href="reviews.html" style="color:#fff">Reviews</a>
-        <a href="service-areas.html" style="color:#fff">Areas</a>
-        <a href="blog/index.html" style="color:#fff">Blog</a>
-        <a href="faq.html" style="color:#fff">FAQ</a>
-        <a href="about-contact.html" style="color:#fff">Contact</a>
-        <a class="btn btn-accent circle" href="contact.html#quote" style="background:#fff;color:#1e2a55;border:1px solid #fff">Get a Free Quote</a>
-      </nav>
+<header class="header" style="background:#394066;color:#fff">
+  <div class="header-inner container" style="display:flex;align-items:center;justify-content:space-between;height:56px">
+    <div class="brand" style="display:flex;gap:10px;align-items:center">
+      <img class="brand-logo" src="images/logo-stamp.png" alt="PNW Electrical Engineering PLLC logo" style="height:28px;border-radius:6px">
+      <strong>PNW Electrical Engineering, PLLC</strong><span>PE #55998</span>
     </div>
-  </header>
+    <nav class="nav" style="display:flex;gap:12px;align-items:center">
+      <a href="index.html" style="color:#fff">Home</a>
+      <a href="services.html" style="color:#fff">Services</a>
+      <a href="projects.html" style="color:#fff">Projects</a>
+      <a href="reviews.html" style="color:#fff">Reviews</a>
+      <a href="service-areas.html" style="color:#fff">Areas</a>
+      <a href="blog/index.html" style="color:#fff">Blog</a>
+      <a href="faq.html" style="color:#fff">FAQ</a>
+      <a href="about-contact.html" style="color:#fff">Contact</a>
+      <a class="btn btn-accent circle" href="contact.html#quote" style="background:#fff;color:#1e2a55;border:1px solid #fff">Get a Free Quote</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
+<main>
 
-    <!-- HERO -->
-    <section class="hero container">
-      <div class="hero-media">
-        <img src="images/hero_mtrainier.webp" alt="Mount Rainier wildflowers" />
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content">
-        <h1>Washington PE Electrical Engineering — Fast, Clear, Stamped</h1>
-        <p class="lead">Commercial &amp; light industrial focus — permit-ready load calculations, transformer adequacy, solar + storage design, and EV charging studies.</p>
-        <div class="cta-group">
-          <a class="btn btn-accent circle" href="contact.html#quote">Get a Free Quote</a>
-          <a class="btn btn-accent" href="about-contact.html">About &amp; Contact</a>
-          <a class="btn btn-outline-brand" href="solar-interconnection-checklist.html">Solar Checklist</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services (3 across) -->
-    <section class="container section">
-      <h2>Our Services</h2>
-      <div class="grid-3">
-        <article class="card">
-          <div class="thumb"><img src="images/ev_card.webp" alt="EV charging engineering" /></div>
-          <div style="padding:12px">
-            <h3>EV Charging Engineering</h3>
-            <p class="small">Load studies, one-lines, panel/transformer checks, and PE-stamped submittals.</p>
-            <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="images/ev2.webp" alt="Transformer adequacy review" /></div>
-          <div style="padding:12px">
-            <h3>Transformer Adequacy</h3>
-            <p class="small">Connected/continuous loads, PF/diversity, right-sizing with growth margin.</p>
-            <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="thumb"><img src="images/ev_card.webp" alt="Solar + storage design" /></div>
-          <div style="padding:12px">
-            <h3>Solar + Storage Design</h3>
-            <p class="small">PV siting, battery modeling, interconnection, and PE-stamped plans.</p>
-            <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- How it Works (4 across) -->
-    <section class="container section">
-      <h2>How It Works</h2>
-      <div class="grid-4">
-        <article class="card"><div style="padding:12px"><h3>1. Call or Email</h3><p class="small">Share your scope (EV, transformer, solar). We confirm utility/AHJ.</p></div></article>
-        <article class="card"><div style="padding:12px"><h3>2. Fast Proposal</h3><p class="small">Clear scope, fixed fee, and timeline.</p></div></article>
-        <article class="card"><div style="padding:12px"><h3>3. Design & Calcs</h3><p class="small">One-lines, load calcs, and interconnection package.</p></div></article>
-        <article class="card"><div style="padding:12px"><h3>4. PE Stamp & Submittal</h3><p class="small">Utility/AHJ-ready deliverables with support through approval.</p></div></article>
-      </div>
-    </section>
-
-    <!-- Packages (3 across) -->
-    <section class="container section">
-      <h2>Sample Packages — Request a Custom Quote</h2>
-      <div class="grid-3">
-        <article class="card"><div style="padding:12px">
-          <h3>EV Charging Study</h3>
-          <p class="small">$2,500–$4,500 (project size dependent)</p>
-          <ul class="small">
-            <li>Load calc & capacity check</li><li>One-line diagrams</li><li>Utility summary</li>
-          </ul>
-          <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
-        </div></article>
-        <article class="card"><div style="padding:12px">
-          <h3>Transformer Adequacy</h3>
-          <p class="small">$1,500–$3,000 (single service)</p>
-          <ul class="small">
-            <li>Diversified loads & PF review</li><li>Growth margin & notes</li><li>PE stamp available</li>
-          </ul>
-          <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
-        </div></article>
-        <article class="card"><div style="padding:12px">
-          <h3>Solar + Storage Design</h3>
-          <p class="small">Custom package</p>
-          <ul class="small">
-            <li>PV + battery modeling</li><li>Interconnection package</li><li>PE-stamped plans</li>
-          </ul>
-          <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
-        </div></article>
-      </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="container section">
-      <div class="card" style="padding:16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-        <div><strong>Ready to start?</strong> We’ll turn around a fast, clear, stamped package.</div>
-        <div class="cta-group">
-          <a class="btn btn-accent circle" href="contact.html#quote">Get a Free Quote</a>
-          <a class="btn btn-outline-brand" href="about-contact.html">About &amp; Contact</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer" style="background:#1e2230;color:#cfd5e1;padding:18px 0">
-    <div class="container" style="font-size:.95rem">
-      <div>PNW Electrical Engineering, PLLC — WA PE 55998</div>
-      <div style="margin-top:6px;">
-        <a href="tel:14437427054" style="color:#cfd5e1">443-742-7054</a> •
-        <a href="mailto:casey-morris@live.com" style="color:#cfd5e1">casey-morris@live.com</a> •
-        <a href="services.html" style="color:#cfd5e1">Services</a> •
-        <a href="about-contact.html" style="color:#cfd5e1">About & Contact</a>
-      </div>
+<section class="hero container">
+  <div class="hero-media">
+    <img src="images/hero_mtrainier.webp" alt="Mount Rainier wildflowers">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1>Washington PE Electrical Engineering — Fast, Clear, Stamped</h1>
+    <p class="lead">Commercial & light industrial focus — permit-ready load calculations, transformer adequacy, solar + storage design, and EV charging studies.</p>
+    <div class="cta-group">
+      <a class="btn btn-accent circle" href="contact.html#quote">Get a Free Quote</a>
+      <a class="btn btn-accent" href="about-contact.html">About & Contact</a>
+      <a class="btn btn-outline-brand" href="solar-interconnection-checklist.html">Solar Checklist</a>
     </div>
-  </footer>
+  </div>
+</section>
 
-</body>
-</html>
+<section class="container section">
+  <h2>Our Services</h2>
+  <div class="grid-3">
+    <article class="card">
+      <div class="thumb"><img src="images/ev_card.webp" alt="EV charging engineering"></div>
+      <div class="body"><h3>EV Charging Engineering</h3><p class="small">Load studies, one-lines, panel/transformer checks, and PE-stamped submittals.</p><a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a></div>
+    </article>
+    <article class="card">
+      <div class="thumb"><img src="images/ev2.webp" alt="Transformer adequacy review"></div>
+      <div class="body"><h3>Transformer Adequacy</h3><p class="small">Connected/continuous loads, PF/diversity, right-sizing with growth margin.</p><a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a></div>
+    </article>
+    <article class="card">
+      <div class="thumb"><img src="images/ev_card.webp" alt="Solar + storage design"></div>
+      <div class="body"><h3>Solar + Storage Design</h3><p class="small">PV siting, battery modeling, interconnection, and PE-stamped plans.</p><a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>How It Works</h2>
+  <div class="grid-4">
+    <article class="card"><div class="body"><h3>1. Call or Email</h3><p class="small">Share your scope (EV, transformer, solar). We confirm utility/AHJ.</p></div></article>
+    <article class="card"><div class="body"><h3>2. Fast Proposal</h3><p class="small">Clear scope, fixed fee, and timeline.</p></div></article>
+    <article class="card"><div class="body"><h3>3. Design & Calcs</h3><p class="small">One-lines, load calcs, and interconnection package.</p></div></article>
+    <article class="card"><div class="body"><h3>4. PE Stamp & Submittal</h3><p class="small">Utility/AHJ-ready deliverables with support through approval.</p></div></article>
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Sample Packages — Request a Custom Quote</h2>
+  <div class="grid-3">
+    <article class="card"><div class="body">
+      <h3>EV Charging Study</h3><p class="small">$2,500–$4,500 (project size dependent)</p>
+      <ul class="small"><li>Load calc & capacity check</li><li>One-line diagrams</li><li>Utility summary</li></ul>
+      <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
+    </div></article>
+    <article class="card"><div class="body">
+      <h3>Transformer Adequacy</h3><p class="small">$1,500–$3,000 (single service)</p>
+      <ul class="small"><li>Diversified loads & PF review</li><li>Growth margin & notes</li><li>PE stamp available</li></ul>
+      <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
+    </div></article>
+    <article class="card"><div class="body">
+      <h3>Solar + Storage Design</h3><p class="small">Custom package</p>
+      <ul class="small"><li>PV + battery modeling</li><li>Interconnection package</li><li>PE-stamped plans</li></ul>
+      <a class="btn btn-outline-brand" href="contact.html#quote">Get a Custom Quote</a>
+    </div></article>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="card" style="padding:16px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+    <div><strong>Ready to start?</strong> We’ll turn around a fast, clear, stamped package.</div>
+    <div class="cta-group">
+      <a class="btn btn-accent circle" href="contact.html#quote">Get a Free Quote</a>
+      <a class="btn btn-outline-brand" href="about-contact.html">About & Contact</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" style="background:#1e2230;color:#cfd5e1;padding:18px 0">
+  <div class="container" style="font-size:.95rem">
+    <div>PNW Electrical Engineering, PLLC — WA PE 55998</div>
+    <div style="margin-top:6px;">
+      <a href="tel:14437427054" style="color:#cfd5e1">443-742-7054</a> •
+      <a href="mailto:casey-morris@live.com" style="color:#cfd5e1">casey-morris@live.com</a> •
+      <a href="services.html" style="color:#cfd5e1">Services</a> •
+      <a href="about-contact.html" style="color:#cfd5e1">About & Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body></html>
