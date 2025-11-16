@@ -24,55 +24,124 @@
   <meta name="twitter:description" content="Thanks for contacting PNW Electrical Engineering. We’ll get back to you shortly." />
   <meta name="twitter:image" content="https://www.pnwengineer.com/images/hero-placeholder.webp" />
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5DQRPTPG');</script>
-<!-- End Google Tag Manager -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5DQRPTPG');</script>
-<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),
+          dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5DQRPTPG');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Page-specific tweaks -->
+  <style>
+    /* Keep logos from getting huge on this page */
+    .header .brand-logo {
+      max-width: 56px;
+      height: auto;
+    }
+
+    .footer-brand img {
+      max-width: 50px;
+      height: auto;
+    }
+
+    /* Center and tighten the thank-you content */
+    .thankyou-main {
+      max-width: 720px;
+      margin: 80px auto;
+      padding: 0 16px 60px;
+      text-align: center;
+    }
+
+    .thankyou-main h1 {
+      font-size: clamp(1.9rem, 2.2vw + 1rem, 2.4rem);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .thankyou-main p.small {
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .thankyou-main .btn {
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .thankyou-main {
+        margin: 60px auto;
+      }
+    }
+  </style>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQRPTPG"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5DQRPTPG"
+            height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<!-- Google Tag Manager (noscript) -->
+  <header class="header">
+    <div class="header-inner container">
+      <div class="brand">
+        <img class="brand-logo" src="images/logo-stamp.png" alt="PNW Electrical Engineering PLLC logo"/>
+        <span>PNW Electrical Engineering, PLLC</span>
+        <span class="badge">PE #55998</span>
+      </div>
+      <nav id="nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="careers.html">Careers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-accent circle cta-quote" href="contact.html#quote">Get a Free Quote</a>
+      </nav>
+      <button id="hamb" class="hamb">☰</button>
+    </div>
+  </header>
 
-<!-- End Google Tag Manager (noscript) -->
-<header class="header">
-  <div class="header-inner container">
-    <div class="brand"><img class="brand-logo" src="images/logo-stamp.png" alt="PNW Electrical Engineering PLLC logo"/> <span>PNW Electrical Engineering, PLLC</span><span class="badge">PE #55998</span></div>
-    <nav id="nav" class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="service-areas.html">Service Areas</a>
-      <a href="blog/index.html">Blog</a>
-      <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a class="btn btn-accent circle cta-quote" href="contact.html#quote">Get a Free Quote</a>
+  <main class="container thankyou-main">
+    <h1>Thanks — we received your message.</h1>
+    <p class="small">
+      We’ll respond shortly. For urgent requests, call
+      <a href="tel:+14437427054">443-742-7054</a>.
+    </p>
+    <a class="btn" href="index.html">Back to Home</a>
+  </main>
 
-    </nav>
-    <button id="hamb" class="hamb">☰</button>
-  </div>
-</header>
-<main class="container">
+  <footer class="footer">
+    <div class="container small">
+      <div class="footer-brand">
+        <img src="images/logo-stamp.png" alt="PNW EE logo"/>
+        <span>PNW Electrical Engineering, PLLC — WA PE 55998</span>
+      </div>
+      <div>
+        <a href="tel:4437427054">443-742-7054</a> •
+        <a href="mailto:casey-morris@live.com">casey-morris@live.com</a> •
+        <a href="index.html">Home</a> •
+        <a href="services.html">Services</a> •
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-  <h1>Thanks — we received your message.</h1>
-  <p class="small">We’ll respond shortly. For urgent requests, call 443-742-7054.</p>
-  <a class="btn" href="index.html">Back to Home</a>
-
-</main>
-<footer class="footer"><div class="container small"><div class="footer-brand"><img src="images/logo-stamp.png" alt="PNW EE logo"/><span>PNW Electrical Engineering, PLLC — WA PE 55998</span></div><div><a href="tel:4437427054">443-742-7054</a> • <a href="mailto:casey-morris@live.com">casey-morris@live.com</a> • <a href="index.html">Home</a> • <a href="services.html">Services</a> • <a href="contact.html">Contact</a></div></div></footer>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/analytics.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/analytics.js"></script>
 </body>
 </html>
