@@ -20,26 +20,45 @@
   <link rel="stylesheet" href="assets/styles.css">
 
   <script type="application/ld+json">
-  {
+{
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "@id": "https://pnwengineer.com#organization",
     "name": "PNW Electrical Engineering, PLLC",
-    "image": "assets/img/logo-stamp.png",
+    "image": "https://pnwengineer.com/assets/img/logo-stamp.png",
     "description": "Washington & Oregon Electrical P.E. stamping and plan review for EV charging, solar PV, audits, and low-voltage/controls.",
     "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "WA & OR",
-      "addressCountry": "US"
+        "@type": "PostalAddress",
+        "addressRegion": "WA & OR",
+        "addressCountry": "US"
     },
-    "areaServed": "Washington",
+    "areaServed": [
+        {
+            "@type": "State",
+            "name": "Washington"
+        },
+        {
+            "@type": "State",
+            "name": "Oregon"
+        }
+    ],
     "url": "https://pnwengineer.com",
     "telephone": "(443) 742-7054",
     "email": "casey-morris@live.com",
     "foundingDate": "2025",
-    "sameAs": []
-  }
-  </script>
+    "sameAs": [
+        "https://pnwelectricalengineering.com"
+    ],
+    "logo": "https://pnwengineer.com/assets/img/logo-stamp.png",
+    "serviceType": [
+        "Electrical Engineering (PE)",
+        "EV Charging Design",
+        "Transformer Adequacy Studies",
+        "Electrical Plan Review",
+        "PE Stamping"
+    ]
+}
+</script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
